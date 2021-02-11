@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - asp_net_fourth_assignment</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="../">Home</a>
+        <a asp-action="Submit">Submit a Suggestion</a>
+        <a asp-action="See">See Suggestions</a>
+    </div>
+
+ 
+    <div class="asideList" style="height: 700px;">
+        <br />
+        <h1>@ViewBag.Title</h1>
+        <br>
+        @RenderBody()
+
+        <br />
+        <br />
+
+
+    </div>
+
+
+</body>
+</html>
