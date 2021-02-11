@@ -4,3 +4,16 @@
 @{
     ViewBag.Title = "Best Places to Eat in Provo, UT";
 }
+
+@model IEnumerable<string>
+
+<div>
+    <ul class="list-group" style="width: 70%; margin: auto;">
+    @foreach (string i in Model)
+    {
+        // booststrap
+        <li class="list-group-item" style="background-color: #ff33;">@i</li>
+        <br />
+    }
+    </ul>
+</div>

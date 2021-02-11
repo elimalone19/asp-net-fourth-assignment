@@ -20,7 +20,14 @@ namespace asp_net_fourth_assignment.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            List<string> RestList = new List<string>();
+
+            foreach(Restaurant r in Restaurant.GetRestaurants())
+            {
+                RestList.Add("#" + r.Rank + "- " + r.Name + ", Top Dish: " + r.Dish + ", Address: " + r.Address + ", Number: " + r.Phone + ", Link: " + r.Link);
+            }
+
+            return View(RestList);
         }
 
         public IActionResult RestList()
