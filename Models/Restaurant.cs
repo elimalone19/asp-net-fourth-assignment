@@ -2,9 +2,24 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.Text.RegularExpressions;
 
 namespace asp_net_fourth_assignment.Models
 {
+    public class Suggestions
+    {
+        [Required]
+        public string Name { get; set; }
+        [Required]
+        public string RestName { get; set; }
+        [Required]
+        public string Dish { get; set; }
+        [RegularExpression(@"\d{3}-\d{3}-\d{4}", ErrorMessage = "Not a valid phone number")]
+        public string Phone { get; set; }
+
+    }
+
     public class Restaurant
     {
         public int Rank { get; set; }

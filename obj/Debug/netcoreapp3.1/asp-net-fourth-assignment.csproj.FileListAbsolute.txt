@@ -34,5 +34,7 @@ C:\Users\elima\source\repos\asp-net-fourth-assignment\obj\Debug\netcoreapp3.1\as
 C:\Users\elima\source\repos\asp-net-fourth-assignment\obj\Debug\netcoreapp3.1\asp-net-fourth-assignment.pdb
 C:\Users\elima\source\repos\asp-net-fourth-assignment\obj\Debug\netcoreapp3.1\asp-net-fourth-assignment.genruntimeconfig.cache
 C:\Users\elima\source\repos\asp-net-fourth-assignment\obj\Debug\netcoreapp3.1\asp-net-fourth-assignment.csproj.CopyComplete
-C:\Users\elima\source\repos\asp-net-fourth-assignment\obj\Debug\netcoreapp3.1\Razor\Views\Home\RestList.cshtml.g.cs
 C:\Users\elima\source\repos\asp-net-fourth-assignment\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\elima\source\repos\asp-net-fourth-assignment\obj\Debug\netcoreapp3.1\Razor\Views\Home\See.cshtml.g.cs
+C:\Users\elima\source\repos\asp-net-fourth-assignment\obj\Debug\netcoreapp3.1\Razor\Views\Home\Submit.cshtml.g.cs
+C:\Users\elima\source\repos\asp-net-fourth-assignment\obj\Debug\netcoreapp3.1\Razor\Views\Home\Confirmation.cshtml.g.cs

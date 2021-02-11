@@ -30,8 +30,25 @@ namespace asp_net_fourth_assignment.Controllers
             return View(RestList);
         }
 
-        public IActionResult RestList()
+        public IActionResult See()
         {
+            return View(Temp.Suggestions);
+        }
+
+        [HttpGet]
+        public IActionResult Submit()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Submit(Suggestions Suggestion)
+        {
+            if (ModelState.IsValid)
+            { //checking model state
+                Temp.AddSuggestion(Suggestion);
+                return View("Confirmation", Suggestion);
+            }
             return View();
         }
 

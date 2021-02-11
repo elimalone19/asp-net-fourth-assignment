@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Recommendations From Others";
+}
+
+@model IEnumerable<asp_net_fourth_assignment.Models.Suggestions>
+
+<div class="container">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Restaurant Name</th>
+                <th>Favorite Dish</th>
+                <th>Restaurant Phone Number</th>
+            </tr>
+        </thead>
+        <br />
+        <tbody>
+
+            @foreach (asp_net_fourth_assignment.Models.Suggestions x in Model)
+            {
+                <br />
+                <tr>
+                    <td>@x.Name</td>
+                    <td>@x.RestName</td>
+                    <td>@x.Dish</td>
+                    <td>@x.Phone</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
